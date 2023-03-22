@@ -1,26 +1,63 @@
+<!-- ! DOCTYPE HTML 문서가 어떤 버전으로 작성되었는지 브라우저에게 알려주는 것, 호환성 -->
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>WEB1 - Welcome</title>
+
 		<meta charset="utf-8" />
+		<!-- !  proper responsive behavior in mobile devices.-->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- ! Bootstrap CSS 홈페이지를 예쁘게 만들어주는 것-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous" />
 	</head>
-	<body>
+
+	<body class="container">
 		<h1><a href="index.html">WEB</a></h1>
-		<ol>
-			<li><a href="1.html">HTML</a></li>
-			<li><a href="2.html">CSS</a></li>
-			<li><a href="3.html">JavaScript</a></li>
-		</ol>
-		<h2>WEB</h2>
-		<p>
-			The World Wide Web (abbreviated WWW or the Web) is an information space
-			where documents and other web resources are identified by Uniform Resource
-			Locators (URLs), interlinked by hypertext links, and can be accessed via
-			the Internet.[1] English scientist Tim Berners-Lee invented the World Wide
-			Web in 1989. He wrote the first web browser computer program in 1990 while
-			employed at CERN in Switzerland.[2][3] The Web browser was released
-			outside of CERN in 1991, first to other research institutions starting in
-			January 1991 and to the general public on the Internet in August 1991.
-		</p>
+		<div class="row">
+			<ul class="col-md-2">
+				<li><a href="1.html">HTML</a></li>
+				<li><a href="2.html">CSS</a></li>
+				<li><a href="3.html">JavaScript</a></li>
+			</ul>
+			<article class="col-md-10">
+				<ol></ol>
+				<p>
+					The World Wide Web (abbreviated WWW or the Web) is an information
+					space where documents and other web resources are identified by
+					Uniform Resource Locators (URLs), interlinked by hypertext links, and
+					can be accessed via the Internet.English scientist Tim Berners-Lee
+					invented the World Wide Web in 1989. He wrote the first web browser
+					computer program in 1990 while employed at CERN in Switzerland.The Web
+					browser was released outside of CERN in 1991, first to other research
+					institutions starting in January 1991 and to the general public on the
+					Internet in August 1991.
+				</p>
+			</article>
+		</div>
+		<br /><br />
+		<div class="btn-group" role="group" aria-label="Basic example">
+			<button type="button" class="btn btn-success">Create</button>
+			<a href="/index.html" class="btn btn-success">Update</a>
+		</div>
+		<input type="button" class="btn btn-success" value="Delete" />
+
+		<!--! Bootstrap Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"></script>
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 	</body>
 </html>
